@@ -1,0 +1,22 @@
+{
+    "name": "vanilla/emoji-manifest",
+    "description": "Builds a Vanilla compatible emoji manifest for a directory of images.",
+    "require": {
+        "vanilla/garden-cli": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Todd Burry",
+            "email": "todd@vanillaforums.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Emoji\\": "src"
+        }
+    },
+    "bin": [
+        "bin/emoji-manifest"
+    ]
+}
