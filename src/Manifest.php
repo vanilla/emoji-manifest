@@ -73,6 +73,7 @@ class Manifest {
                 $archive[$alias] = $emoji[$name];
             }
         }
+        ksort($archive);
 
         // Figure out the editor.
         $editor = $this->guessEditorList(
@@ -95,7 +96,7 @@ class Manifest {
         ];
 
         // Add the rest of the current manifest back to the end of the manifest.
-        unset($currentManifest['emoji'], $currentManifest['aliases']);
+        unset($currentManifest['emoji'], $currentManifest['aliases'], $currentManifest['archive']);
         $manifest = array_replace($manifest, $currentManifest);
 
         return $manifest;
