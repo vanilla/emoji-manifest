@@ -84,6 +84,7 @@ class Manifest {
         // Build the manifest.
         $manifest = [
             'name' => '',
+            'author' => '',
             'description' => '',
             'format' => self::DEFAULT_FORMAT,
             'emoji' => $emoji,
@@ -235,7 +236,7 @@ class Manifest {
             if (!in_array($ext, ['gif', 'jpg', 'jpeg', 'png', 'svg'])) {
                 continue;
             }
-            if (strcasecmp(basename($path, $ext), 'icon.') === 0) {
+            if (strcasecmp(basename($path, $ext), 'icon.') === 0 || stripos($basename, '-icon') !== false) {
                 continue;
             }
 
@@ -326,6 +327,7 @@ class Manifest {
                 break;
             case 'php':
                 $str = '<?php return '.var_export($data, true).";\n";
+                $str = str_replace(" \n", "\n", $str);
                 break;
             default:
                 throw new \Exception("Invalid manifest format.", 500);
