@@ -16,13 +16,13 @@
     ":#": "grimace",
     "o:)": "innocent",
     "<3": "heart",
-    "(*)": "star",
     ">:)": "smiling_imp",
-    "O.o": "huh",
+    "O.o": "surprised",
     "o.O": "eh",
     "8-)": "glasses",
     "=)": "smiley",
-    ">_<": "rage"
+    ">_<": "rage",
+    ":3": "blush"
   },
   "editor": {
     ":)": "smile",
@@ -36,11 +36,12 @@
     ":'(": "cry",
     ":|": "neutral_face",
     "B)": "sunglasses",
-    ":#": "grin",
-    "o:)": "innocent",
+    ":#": "grimace",
+    "O.o": "surprised",
+    ":3": "blush",
     "<3": "heart",
-    "(*)": "star",
-    ">:)": "smiling_imp"
+    "o:)": "innocent",
+    ">:)": "naughty"
   },
   "archive": {
     "disappointed_relieved": "disappointed_relieved",
